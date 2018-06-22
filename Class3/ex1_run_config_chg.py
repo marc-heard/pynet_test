@@ -50,7 +50,7 @@ def obtain_saved_objects(file_name):
                     uptime, last_changed, run_config_changed = device_attrs
                     tmp_device = NetworkDevice(uptime, last_changed, run_config_changed)
                     net_devices[device_name] = tmp_device
-        else
+        else:
             raise ValueError("Invalid file name: {}".format(file_name))
         return net_devices
 
