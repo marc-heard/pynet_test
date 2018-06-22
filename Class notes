@@ -1,0 +1,65 @@
+
+
+
+pynet-rtr1 (Cisco 881)
+    ip_addr = 184.105.247.70 (cisco1.twb-tech.com)
+    snmp_port = 161
+    ssh_port = 22
+    username = pyclass
+    password = 88newclass
+
+pynet-rtr2 (Cisco 881)
+    ip_addr = 184.105.247.71 (cisco2.twb-tech.com)
+    snmp_port = 161
+    ssh_port = 22
+    username = pyclass
+    password = 88newclass
+
+pynet-sw1 (Arista vEOS switch)
+    ip_addr = 184.105.247.72 (arista1.twb-tech.com)
+    ssh_port = 22
+    eapi_port = 443
+    username = pyclass
+    password = 88newclass
+
+pynet-sw2 (Arista vEOS switch) 
+    ip_addr = 184.105.247.73  (arista2.twb-tech.com)
+    ssh_port = 22
+    eapi_port = 443
+    username = pyclass
+    password = 88newclass
+
+pynet-sw3 (Arista vEOS switch) 
+    ip_addr = 184.105.247.74  (arista3.twb-tech.com)
+    ssh_port = 22
+    eapi_port = 443
+    username = pyclass
+    password = 88newclass
+
+pynet-sw4 (Arista vEOS switch) 
+    ip_addr = 184.105.247.75  (arista4.twb-tech.com)
+    ssh_port = 22
+    eapi_port = 443
+    username = pyclass
+    password = 88newclass
+
+pynet-jnpr-srx1 (Juniper SRX)
+    ip_addr = 184.105.247.76  (srx1.twb-tech.com)
+    ssh_port = 22
+    netconf_port = 830
+    username = pyclass
+    password = 88newclass
+
+nxos1 (NX-OSv Switch)
+    hostname = nxos1.twb-tech.com
+    ssh_port = 22
+    nxapi_port = 8443
+    username = pyclass
+    password = 88newclass
+
+nxos2 (NX-OSv Switch)
+    hostname = nxos2.twb-tech.com
+    ssh_port = 22
+    nxapi_port = 8443
+    username = pyclass
+    password = 88newclass
