@@ -95,8 +95,8 @@ def get_snmp_system_name(a_device, snmp_user):
 
 
 def get_snmp_uptime(a_device, snmp_user):
-    sys_name_oid = '1.3.6.1.2.1.1.3.0'
-    return snmp_extract(snmp_get_oid_v3(a_device, snmp_user, oid=sys_name_oid))
+    sys_uptime_oid = '1.3.6.1.2.1.1.3.0'
+    return snmp_extract(snmp_get_oid_v3(a_device, snmp_user, oid=sys_uptime_oid))
 
 
 def create_new_device(device_name, uptime, last_changed):
@@ -154,11 +154,11 @@ def main():
             dots_to_print = (35 - len(device_name)) * '.'
             print("{} {}".format(device_name, dots_to_print), end=' ')
 
-            if check_for_reboot(saved_devices, uptime,last_changed):
+            if check_for_reboot(saved_device, uptime, last_changed):
                 if last_changed <= reload_window:
                     print("DEVICE RELAODED...not changed")
                     current_devices[device_name] = NetworkDevice(uptime, last_changed, False)
-                else
+                else:
                     print("DEVICE RELOADED...and changed")
                     current_devices[device_name] = NetworkDevice(uptime, last_changed, True)
                     send_notification(device_name)
