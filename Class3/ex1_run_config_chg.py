@@ -67,7 +67,7 @@ def save_objects_to_file(file_name, data_dict):
     elif out_format == 'yml':
         with open(file_name, 'w') as f:
             f.write(yaml.dump(data_dict, default_flow_style=False))
-    elif out_format == 'json'
+    elif out_format == 'json':
         with open(file_name, 'w') as f:
             f.dump(data_dict, f)
 
